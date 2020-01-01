@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>유튜브 소스코드 변경</title>
+    <script type="text/javascript">
+      function getSource(){
+          var o_src_full = document.getElementById("original_source").value;
+          var o_src_short = o_src_full.replace("https://www.youtube.com/watch?v=","");
+          var front = '&lt;div style="position:relative;padding-bottom:56.25%;height:0px"&gt;&lt;iframe type="text/html" allowtransparency="true" frameborder="0" width="100%" height="100%" src="http://www.youtube-nocookie.com/embed/';
+          var end = '?controls=1&amp;rel=0&amp;modestbranding=1&amp;showinfo=0&amp;autohide=1" style="position: absolute; top: 0px; left: 0px;"&gt;&lt;/iframe&gt;&lt;/div&gt;';
+          document.write(front+o_src_short+end);
+      }
+    </script>
+    <style media="screen">
+        form{
+          text-align: center;
+        }
+        div{
+          padding-bottom: 30px;
+        }
+    </style>
+  </head>
+  <body>
+    <form class="" action="" method="post">
+      <div>
+        <input type="text" id="original_source" value="" placeholder="유튜브 주소를 입력하세요." align="middle">
+      </div>
+      <div>
+        <button type="button" name="source_input" onclick="getSource();">소스 변환</button>
+      </div>
+
+      <!-- <input type="textarea" id="result_source" value="" readonly style="width:300px; height:100px;"> -->
+
+    </form>
+  </body>
+</html>
