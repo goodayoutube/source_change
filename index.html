@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>유튜브 소스코드 변경</title>
+    <script src="./test.js"></script>
+    <style media="screen">
+        form{
+          text-align: center;
+        }
+        input{
+          width: 300px;
+          margin-bottom: 30px;
+          text-align: center;
+        }
+        div{
+          padding-bottom: 10px;
+        }
+        .time{
+          width: 35px;
+        }
+        #result_source{
+          width: 300px;
+          height: 200px;
+          resize: none;
+        }
+        button{
+          width: 100px;
+          height: 30px;
+        }
+    </style>
+  </head>
+  <body>
+    <form class="" action="" method="post">
+      <div>
+        유튜브 주소를 입력하세요.
+      </div>
+      <div>
+        <input type="text" id="original_source" value="" placeholder="유튜브 주소를 입력하세요." align="middle" >
+      </div>
+      <div>
+        재생 시작 시간을 입력하세요.
+      </div>
+      <div>
+        <input class="time" type="number" id="min" placeholder="0" min="0"/>분
+        <input class="time" type="number" id="sec" placeholder="0" min="0" max="59"/>초
+      </div>
+      <div>
+        <button type="button" name="source_input" onclick="getSource();" >소스 변환</button>
+      </div>
+      <div>
+        <textarea id="result_source" cols ="10" value="안녕하세요." wrap="on"></textarea>
+      </div>
+    </form>
+  </body>
+</html>
