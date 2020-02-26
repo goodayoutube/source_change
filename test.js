@@ -22,7 +22,7 @@ function getSource(){
 
       document.getElementById("result_source").value = r_src_full;
 
-      setTimeout(function() {alert("클립보드에 복사되었습니다.");},100); //timeout for 100 msec
+      setTimeout(function() {alert("클립보드에 복사되었습니다ddd.");},100); //timeout for 100 msec
     }else {
       alert("올바른 주소가 아닙니다.")
     }
