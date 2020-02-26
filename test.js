@@ -10,7 +10,7 @@ function getSource(){
       var o_src_short = o_src_full.replace(o_src_youtube,"");
       var front = '<div style="position:relative;padding-bottom:56.25%;height:0px"><iframe type="text/html" allowtransparency="true" frameborder="0" width="100%" height="100%" src="http://www.youtube-nocookie.com/embed/';
       var middle = '?controls=1&amp;rel=0&amp;modestbranding=1&amp;showinfo=0&amp;autohide=1&amp;start=';
-      var end = '"style="position: absolute; top: 0px; left: 0px;"></iframe></div><br><p>내용입력</p>';
+      var end = '"style="position: absolute; top: 0px; left: 0px;"></iframe></div><br><font size="3"><p>내용입력</p><font>';
       var r_src_full = front+o_src_short+middle+r_src_time+end;
       var tempElem = document.createElement('textarea');
 
