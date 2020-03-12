@@ -4,11 +4,11 @@ function getSource(){
     var m_src_youtube = "https://youtu.be";
 
 
-    if(o_src_full.includes(o_src_youtube)) {
+    if(o_src_full.includes(o_src_youtube)) {            //for desktop
       var o_src_short = o_src_full.replace(o_src_youtube,"");
       sourceChange(o_src_short);
 
-    }else if (o_src_full.includes(m_src_youtube)) {
+    }else if (o_src_full.includes(m_src_youtube)) {     //for mobile
       var o_src_short = o_src_full.replace(m_src_youtube,"");
       sourceChange(o_src_short);
 
